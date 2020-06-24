@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
+//import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
 import {
   Header,
   HeaderName,

@@ -35,24 +35,33 @@
   margin-bottom: -$layout-03;
 }
 
-.user-page__form-text {
-  background-color: $ui-background;
-}
-
-.user-page__form-entry {
+.user-page__form {
   margin-top: $layout-02;
-  //background-color: pink;
+  margin-bottom: $layout-04;
+  margin-left: -$layout-01;
 }
 
-#user-page__cancel {
-  margin-right: $spacing-03;
+.user-page__form-text {
+  //background-color: $ui-background;
+  margin-bottom: $layout-02;
+}
+
+.bx--label {
+  //background-color: $ui-01;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: $spacing-03;
 }
 
 .bx--fieldset {
   margin-bottom: $spacing-07;
 }
 
-.user-page__footer {
-  height: $layout-04;
+.bx--checkbox-label {
+  margin-top: $spacing-02;
   //background-color: pink;
+}
+
+#user-page__cancel {
+  margin-right: $spacing-03;
 }

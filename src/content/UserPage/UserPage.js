@@ -3,7 +3,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Form,
-  FormGroup,
   TextInput,
   Button,
   Checkbox,
@@ -23,70 +22,57 @@ const UserPage = () => {
         <div className="bx--row user-page__border" />
         <div className="bx--row user-page__heading">New user</div>
         <div className="bx--row user-page__content">
-          <div className="bx--col-md-4 bx--col-lg-6 bx--no-gutter user-page__form">
+          <div className="bx--col-md-4 bx--col-lg-6 user-page__form">
             <Form>
-              <FormGroup className="user-page__form-entry">
-                <TextInput
-                  className="user-page__form-text"
-                  id="user"
-                  labelText="User"
-                  placeholder="The user's full name"
-                />
-              </FormGroup>
-              <FormGroup className="user-page__form-entry">
-                <TextInput
-                  className="user-page__form-text"
-                  id="username"
-                  labelText="Username"
-                  placeholder="The username that the user will use to log in"
-                />
-              </FormGroup>
-              <FormGroup className="user-page__form-entry">
-                <TextInput
-                  className="user-page__form-text"
-                  id="email"
-                  labelText="Email"
-                  placeholder="The user's email address"
-                />
-              </FormGroup>
-              <FormGroup className="user-page__form-entry">
-                <TextInput
-                  className="user-page__form-text"
-                  id="password"
-                  labelText="Password (optional)"
-                  placeholder="Enter a temporary password for the user"
-                />
-              </FormGroup>
-              <FormGroup className="user-page__form-entry">
-                <TextInput
-                  className="user-page__form-text"
-                  id="passwordx2"
-                  labelText="Re-enter password (optional)"
-                  placeholder="Re-enter the new password"
-                />
-              </FormGroup>
-              <FormGroup className="user-page__form-entry">
-                <fieldset className="bx--fieldset">
-                  <legend className="bx--label">Roles</legend>
-                  <Checkbox labelText="Administrator" id="checked" />
-                  <Checkbox labelText="Business analyst" id="checked-2" />
-                  <Checkbox labelText="Data engineer" id="checked-3" />
-                  <Checkbox labelText="Data quality analyst" id="checked-4" />
-                  <Checkbox labelText="Data scientist" id="checked-5" />
-                  <Checkbox labelText="Data steward" id="checked-6" />
-                  <Checkbox labelText="Developer" id="checked-7" />
-                </fieldset>
-                <Button id="user-page__cancel" kind="secondary" type="submit">
-                  Cancel
-                </Button>
-                <Button disabled kind="primary" type="submit">
-                  Create
-                </Button>
-              </FormGroup>
+              <TextInput
+                className="user-page__form-text"
+                id="user"
+                labelText="User"
+                placeholder="The user's full name"
+              />
+              <TextInput
+                className="user-page__form-text"
+                id="username"
+                labelText="Username"
+                placeholder="The username that the user will use to log in"
+              />
+              <TextInput
+                className="user-page__form-text"
+                id="email"
+                labelText="Email"
+                placeholder="The user's email address"
+              />
+              <TextInput
+                className="user-page__form-text"
+                id="password"
+                labelText="Password (optional)"
+                placeholder="Enter a temporary password for the user"
+              />
+              <TextInput
+                className="user-page__form-text"
+                id="passwordx2"
+                labelText="Re-enter password (optional)"
+                placeholder="Re-enter the new password"
+              />
+              <fieldset className="bx--col-md-5 bx--fieldset">
+                <legend className="bx--label">Roles</legend>
+                <Checkbox labelText="Administrator" id="checked" />
+                <Checkbox labelText="Business analyst" id="checked-2" />
+                <Checkbox labelText="Data engineer" id="checked-3" />
+                <Checkbox labelText="Data quality analyst" id="checked-4" />
+                <Checkbox labelText="Data scientist" id="checked-5" />
+                <Checkbox labelText="Data steward" id="checked-6" />
+                <Checkbox labelText="Developer" id="checked-7" />
+              </fieldset>
+              <Button id="user-page__cancel" kind="secondary" type="submit">
+                Cancel
+              </Button>
+              <Button disabled kind="primary" type="submit">
+                Create
+              </Button>
             </Form>
           </div>
         </div>
-        <div className="bx--row user-page__footer" />
       </div>
     </div>
   );
